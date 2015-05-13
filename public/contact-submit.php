@@ -11,9 +11,9 @@ $subject = "Contact Message from outsidervc.com - $name";
 $to      = "info@outsidervc.com";
 
 
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-  ->setUsername('cory@outsidervc.com')
-  ->setPassword('Coryray12');
+$transport = Swift_SmtpTransport::newInstance('smtp.mailgun.org', 465, "ssl")
+  ->setUsername('admin@outsidervc.com')
+  ->setPassword('G2xyr9#');
 
 $mailer = Swift_Mailer::newInstance($transport);
 
